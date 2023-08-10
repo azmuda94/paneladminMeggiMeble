@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://kit.fontawesome.com/22f8874e5a.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./css/listofproducts.css">
+</head>
+
+<body>
+  <h1 class="title">Lista produktów</h1>
+
+  <div class="container">
+    <table>
+      <tr>
+        <th style="width:30%">Nazwa</th>
+        <th style="width:30%">
+          <select>
+            <option value="" disabled selected>Kategorie:</option>
+            <option value="">Narożniki</option>
+            <option value="">Sofy</option>
+            <option value="">Fotele</option>
+            <option value="">Sypialnie</option>
+          </select>
+        </th>
+        <th style="width:20%"></th>
+        <th style="width:20%"></th>
+      </tr>
+      <tr>
+        <td>Luna</td>
+        <td>Narożnik</td>
+        <td><a href="./image.html">Dodaj zdjęcie</a></td>
+        <td><a href="/product.html"><i class="fa-solid fa-pen-to-square"></i></a> <a id="remove" href=""><i
+              class="fa-solid fa-trash"></i></a></td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+<script src="./js/script.js"></script>
+
+</html>
