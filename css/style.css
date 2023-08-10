@@ -1,0 +1,75 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f3f3;
+}
+
+h1 {
+  margin: 1em 0;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 1em;
+  width: 100%;
+  max-width: 1200px;
+}
+
+button {
+  margin: 2em;
+  padding: 1em;
+}
+
+.container {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container table {
+  width: 50%;
+  font-size: 2rem;
+}
+
+.container table tr {
+  text-align: center;
+}
+
+.container table td {
+  padding: 1em;
+}
+
+.container table i {
+  margin: 0 0.5em;
+  color: black;
+}
+
+.container table,
+.container th,
+.container td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+/*# sourceMappingURL=style.css.map */

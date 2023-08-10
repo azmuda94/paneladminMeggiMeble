@@ -1,0 +1,94 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: #3e3e4f;
+  color: white;
+}
+
+h1 {
+  margin: 1em 0;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 1em;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.container {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container table {
+  width: 50%;
+  font-size: 2rem;
+}
+
+.container table th {
+  padding: 0.5em;
+}
+
+.container table tr {
+  text-align: center;
+}
+
+.container table td {
+  padding: 1em;
+}
+
+.container table i {
+  margin: 0 0.5em;
+  color: #fff;
+}
+
+.container table a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container table,
+.container th,
+.container td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.container select {
+  padding: 0.5em;
+  width: 80%;
+  font-size: 2rem;
+  background-color: #3e3e4f;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+/*# sourceMappingURL=listofproducts.css.map */
