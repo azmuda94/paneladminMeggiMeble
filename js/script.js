@@ -27,5 +27,6 @@ if (urlpathame.toString()=='/listofproducts.html')
 }
 else
 {
-	window.location.replace(urlredirect);
+	console.log(urlpathame.toString(),urlorigin)
+	//window.location.replace(urlredirect);
 }
