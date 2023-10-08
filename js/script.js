@@ -1,6 +1,8 @@
 const urlpathame=window.location.pathname;
 const urlorigin=window.location.origin;
-const urlredirect=urlorigin+'/loginpage.html'
+const urlredirect=urlorigin+'/loginpage.html';
+
+const authKey=localStorage.getItem("authKey");
 
 
 if (urlpathame.toString()=='/listofproducts.html')
@@ -21,12 +23,13 @@ if (urlpathame.toString()=='/listofproducts.html')
 	removeBtn.addEventListener('click', removeAlert);
 }
 
-if (urlpathame.toString()=='/listofproducts.html')
+if (urlpathame.toString()=='/loginpage.html')
 {
-
+	if (authKey)
+		window.location.replace(urlorigin);
 }
 else
-{
-	console.log(urlpathame.toString(),urlorigin)
-	//window.location.replace(urlredirect);
+{	
+	if (!authKey)
+		window.location.replace(urlredirect);
 }

@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./dist/css/loginpage.min.css">
+    <link rel="stylesheet" href="./css/loginpage.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
         <div class="header__top">
 
             <div class="header__top-logo">
-                <a href="index.html"><img src="./dist/img/logo-mobile-new.png" alt="Logo firmy"></a>
+                <a href="index.html"><img src="./img/logo-desktop.png" width="500" height="300" alt="Logo firmy"></a>
             </div>
         </div>
     </header>
@@ -30,23 +30,24 @@
         
         <h2 class="section-title">ZALOGUJ SIĘ, PREZESIE!</h2>
 
-        <div class="popup">
+        <form class="popup">
             <div class="windowlogin">
                 <div class="login">
                     <label for="">Login</label>
                     <input type="text">
                 </div>
+                <br/>
                 <div class="login">
                     <label for="">Hasło</label>
-                    <input type="text">
+                    <input type="password">
                 </div>
-
+                <br/>
                 <div class="button">
-                    <button>Zaloguj</button>
+                    <input type="submit" value="Zaloguj"/>
                 </div>
             </div>
 
-        </div>
+        </form>
 
     </main>
 
