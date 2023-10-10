@@ -34,16 +34,18 @@
             <div class="windowlogin">
                 <div class="login">
                     <label for="">Login</label>
-                    <input type="text">
+                    <input id="login" type="text">
                 </div>
                 <br/>
-                <div class="login">
+                <div  class="password">
                     <label for="">Hasło</label>
-                    <input type="password">
+                    <input id="password" type="password">
                 </div>
+                <br/>
+                <div  class="errorMsg"></div>                
                 <br/>
                 <div class="button">
-                    <input type="submit" value="Zaloguj"/>
+                    <input id="submit" type="submit" value="Zaloguj"/>
                 </div>
             </div>
 
@@ -52,6 +54,7 @@
     </main>
 
     <script src="./js/script.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 
 </html>

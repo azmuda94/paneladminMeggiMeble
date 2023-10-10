@@ -29,6 +29,10 @@ html {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    align-items:center;
-    
+    align-items:center;    
+  }
+
+  .errorMsg{
+    color: red;
+    font-size:18px;
   }

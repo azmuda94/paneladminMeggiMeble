@@ -2,7 +2,22 @@ const urlpathame=window.location.pathname;
 const urlorigin=window.location.origin;
 const urlredirect=urlorigin+'/loginpage.html';
 
-const authKey=localStorage.getItem("authKey");
+const inputlogout = document.querySelector("#logout");
+
+const authKey=localStorage.getItem("secretKey");
+
+if (urlpathame.toString()!='/loginpage.html')
+{
+
+	inputlogout.addEventListener("click", (event) => {
+		localStorage.removeItem('secretKey');
+		window.location.replace(urlorigin);
+
+	})
+}
+
+
+////////// routing //////////////
 
 
 if (urlpathame.toString()=='/listofproducts.html')
