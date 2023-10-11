@@ -17,14 +17,17 @@
     <form class="wrapper" action="">
         <input type="file" id="addimage">
         </br>
-        <label for="IsMainFile">Ustaw jako zdjęcie główne</label>
+        <label id="labelIsMainFile" for="IsMainFile">Ustaw jako zdjęcie główne</label>
         <input type="checkbox" id="IsMainFile" name="IsMainFile" >
         <br/><br/>
         <div  class="loader"></div>   
         <br/><br/>
         <div  class="errorMsg"></div>                
         <br/><br/>
-        <input class="btns" type="submit" id="submit" name="Zapisz">
+        <div class="button">
+            <input class="btns" type="submit" id="submit" name="Zapisz" value="Wyślij">
+            <a href="/"><input  id="refresh" class="btns"  type="button" value="Powrót do listy"></a>
+        </div>
     </form>
 </body>
 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/22f8874e5a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top">
+    
+                <div class="header__top-logo">
+                    <a href="index.html"><img src="./img/logo-desktop.png" width="200" height="140" alt="Logo firmy"></a>
+                </div>
+            </div>
+        </header>
+        <br/><br/>
+        <h1 class="title">Panel administracyjny [REALIZACJE]</h1>
+        <br/><br/>
+        <div>
+            <input id="logout" class="btns" type="button" value="Wyloguj">
+            <a href="/"><input id="productlist" class="btns"  type="button" value="Lista produktów"></a>
+            <a href="/image.html"><input  id="add" class="btns"  type="button" value="Dodaj realizacje"></a>
+            <a href="/projectslist.html"><input  id="refresh" class="btns"  type="button" value="Odśwież"></a>
+        </div>
+        <br/><br/>
+        <div class="container">  
+                    
+            <table class="table table-striped" style="width: 30%;">
+                <tr  class="headtr">                    
+                    <th width="90%">Realizacja</th>
+                    <th width="10%"></th>
+                </tr>
+                <tbody id="myTable">              
+                </tbody>
+            </table>
+
+          
+        </div>
+    </div>
+</body>
+
+<script src="./js/script.js"></script>
+<script src="./js/projectlist.js"></script>
+
+</html>
