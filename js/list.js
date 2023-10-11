@@ -49,22 +49,36 @@ $('.sortable').on('click', function(){
 	var order = $(this).data('order')
 	var text = $(this).html()
 	text = text.substring(0, text.length - 1)
+    
+    const filterValue=selectfilterType.value;
+    let newArray;
 
-    console.log(column);
+    if (filterValue!=0)
+    {
+        newArray=myArray.filter((element)=>{
+            return element.typeproductid==filterValue;
+        })        
+        
+    }else{
+        newArray=myArray;
+       
+    }
+
+    
 
 	if(order == 'desc'){
 		$(this).data('order', "asc")
-		myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
+		newArray = newArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
 		text += '&#9660'
 
 	}else{
 		$(this).data('order', "desc")
-		myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
+		newArray = newArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
 		text += '&#9650'
 
 	}
 	$(this).html(text);
-	buildTable(myArray);
+	buildTable(newArray);
 })
 
 selectfilterType.addEventListener("change", (event) => {
@@ -87,9 +101,7 @@ selectfilterType.addEventListener("change", (event) => {
 function removeProduct(event){
     const id=event.id;
     let errorTxt;
-
-    console.log(id);
-
+    
     const response = confirm("Czy napewno chcesz usunąć produkt?");
 
    if (response) {

@@ -40,7 +40,7 @@ h1 {
 .popup {
   margin: 0 auto;
   margin-left:5%;
-  margin-top:5%;
+  margin-top:0;
   padding: 0 1em;
   width: 80%;  
   display: flex;
@@ -119,6 +119,26 @@ td {
   color: red;
 }
 
+#divothersfiles{
+  display: flex;
+  flex-direction: row;
+}
+
+.imgmin{
+  display: flex;
+  flex-direction: column;
+  border:solid 2px black;
+  padding:2px;
+}
+
+.clicked{
+  cursor: pointer;
+}
+
+.formsection{
+  display: flex;
+  flex-direction: column;
+}
 /*@media (min-width: 992px) {
   h1 {
     font-size: 3rem;

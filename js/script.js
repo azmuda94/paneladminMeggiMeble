@@ -6,6 +6,19 @@ const inputlogout = document.querySelector("#logout");
 
 const authKey=localStorage.getItem("secretKey");
 
+
+if (urlpathame.toString()=='/loginpage.html' || urlpathame.toString()=='/account.html')
+{	console.log(urlpathame);
+	if (authKey)
+		window.location.replace(urlorigin);
+}
+else
+{	
+	if (!authKey)
+		window.location.replace(urlredirect);
+}
+
+
 if (urlpathame.toString()!='/loginpage.html')
 {
 
@@ -38,16 +51,7 @@ if (urlpathame.toString()=='/listofproducts.html')
 	removeBtn.addEventListener('click', removeAlert);
 }
 
-if (urlpathame.toString()=='/loginpage.html')
-{
-	if (authKey)
-		window.location.replace(urlorigin);
-}
-else
-{	
-	if (!authKey)
-		window.location.replace(urlredirect);
-}
+
 
 
 ///// tabele //////
