@@ -4,10 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    
+<div>
+    <h1 class="title">Dodawanie/edycja produktu</h1>
+   
+    <form class="popup">        
+            <div class="formsection">
+                <label for="name">Nazwa*:</label>
+                <input id="name" type="text">
+            </div>
+            <br/>
+            <div class="formsection">
+                <label for="descritpion">Opis*:</label>
+                <textarea id="description"  rows="3"></textarea>
+            </div>
+            <br/>
+            <div class="formsection">
+                <label for="type">Kategoria*:</label>
+                <select id="type" width="200" id="type"></select>
+            </div>
+            <br/>
+            <div class="formsection">
+                <label for="size">Rozmiar:</label>
+                <input id="size" type="text">
+            </div>
+            <br/>
+            <div  class="errorMsg"></div>                
+            <br/>
+            <div class="button">
+                <input id="submit" class="btns" type="submit" value="Dodaj"/>
+            </div>
+
+    </form>
+    <h2 id="image-title" class="section-title"></h2>    
 </body>
 
-<script src="./js/script.js"></script>
+<script src="./js/product.js"></script>
 </html>

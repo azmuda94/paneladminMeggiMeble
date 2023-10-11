@@ -12,40 +12,54 @@
     <script src="https://kit.fontawesome.com/22f8874e5a.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 
 <body>
     <div class="wrapper">
-        <h1 class="title">Panel administracyjny</h1>
+        <header class="header">
+            <div class="header__top">
+    
+                <div class="header__top-logo">
+                    <a href="index.html"><img src="./img/logo-desktop.png" width="200" height="140" alt="Logo firmy"></a>
+                </div>
+            </div>
+        </header>
+        <br/><br/>
+        <h1 class="title">Panel administracyjny [PRODUKTY]</h1>
+        <br/><br/>
+        <div>
+            <input id="logout" class="btns" type="button" value="Wyloguj">
+            <input id="buttonCategoryList" class="btns"  type="button" value="Lista kategorii produktu">
+            <input id="buttonImg" class="btns"  type="button" value="Lista zdjęć realizacje">
+            <a href="/product.html"><input  id="add" class="btns"  type="button" value="Dodaj produkt"></a>
+            <a href="/"><input  id="refresh" class="btns"  type="button" value="Odśwież"></a>
+        </div>
+        <br/><br/>
+        <div class="container">  
+            <label for="filterType">Kategoria: </label>         
+            <select id="filterType" width="200" id="filterType"></select>
+            </br></br>            
+            <table class="table table-striped">
+                <tr  class="headtr">
+                    <th width="45%" class="sortable" data-column="name" data-order="desc">Nazwa &#9650</th>
+                    <th width="40%" class="sortable" data-column="typeproduct" data-order="desc">Kategoria &#9650</th>
+                    <th width="10%" ></th>
+                    <th width="5%" > </th>
+                </tr>
+                <tbody id="myTable">              
+                </tbody>
+            </table>
 
-        <input id="logout" type="button" value="Wyloguj">
-
-        <div class="container">           
-
-            <a href="#">
-                <div class="square">
-                    <h2 class="section-title">Dodaj produkt</h2>
-                </div>
-            </a>
-            <a href="#">
-                <div class="square">
-                    <h2 class="section-title">Dodaj kategorię</h2>
-                </div>
-            </a>
-            <a href="./image.html">
-                <div class="square">
-                    <h2 class="section-title">Dodaj zdjęcie</h2>
-                </div>
-            </a>
-            <a href="./listofproducts.html">
-                <div class="square">
-                    <h2 class="section-title">Lista produktów</h2>
-                </div>
-            </a>
+          
         </div>
     </div>
 </body>
 
 <script src="./js/script.js"></script>
+<script src="./js/list.js"></script>
 
 </html>

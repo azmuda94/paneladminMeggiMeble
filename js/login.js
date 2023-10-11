@@ -47,5 +47,5 @@ submit.addEventListener("click", (event) => {
 
 		document.querySelector(".errorMsg").innerText=errorTxt;
 	  });
-	;
+	
   });

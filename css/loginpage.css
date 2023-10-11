@@ -32,7 +32,16 @@ html {
     align-items:center;    
   }
 
+  .btns{
+    width: 200px;
+    padding: 5px;
+  }
+  
+  .dataname{
+    font-weight: bold;
+    font-size: 20px;
+  }
   .errorMsg{
     color: red;
-    font-size:18px;
   }
+  

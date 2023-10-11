@@ -7,19 +7,25 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./css/image.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
 
     <h1>Dodaj zdjęcia</h1>
 
-    <form action="">
-        <input type="file" multiple id="addimage">
-        <input type="checkbox">
-        <input type="submit" name="Zapisz">
+    <form class="wrapper" action="">
+        <input type="file" id="addimage">
+        </br>
+        <label for="IsMainFile">Ustaw jako zdjęcie główne</label>
+        <input type="checkbox" id="IsMainFile" name="IsMainFile" >
+        <br/><br/>
+        <div  class="errorMsg"></div>                
+        <br/><br/>
+        <input class="btns" type="submit" id="submit" name="Zapisz">
     </form>
 </body>
 
-<script src="./js/script.js"></script>
+<script src="./js/image.js"></script>
 
 </html>
